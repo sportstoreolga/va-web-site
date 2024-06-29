@@ -1,0 +1,24 @@
+main:
+  - name: "Главная"
+    url: "/services/"
+    weight: 2
+  - name: "Магазин"
+    url: "/team/"
+    weight: 3
+  - name: "О нас"
+    url: "/about/"
+    weight: 4
+  - name: "Контакты"
+    url: "/contact/"
+    weight: 5
+  - name: "Новости"
+    url: "/contact/"
+    weight: 6
+
+footer:
+  - name: "Главная"
+    url: "/"
+    weight: 1
+  - name: "Контакты"
+    url: "/contact/"
+    weight: 2

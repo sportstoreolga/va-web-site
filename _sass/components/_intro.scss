@@ -1,0 +1,61 @@
+.intro {
+  padding: 0;
+  .img {
+    background-image: url("/images/more_1920x510.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    height: calc(max(300px, min(60vh,485px)));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      height: 60%;
+    }
+  }
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 60px;
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+
+  }
+  h1 {
+    color: $black;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+      font-size: 48px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 50px;
+    }
+  }
+  h2 {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: $black;
+    font-family: $font-family-base;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: light;
+    line-height: 1.5;
+    color: $steel;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+  }
+}
+
+.intro-small {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}

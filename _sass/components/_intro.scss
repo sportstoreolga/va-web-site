@@ -15,11 +15,13 @@
       height: 60%;
       width: 80%;
       margin: auto;
+      padding-bottom: 10%;
     }
     @include media-breakpoint-up(md) {
       img {
         height: 60%;
         width: unset;
+        padding-bottom: 3%;
       }
     }
   }

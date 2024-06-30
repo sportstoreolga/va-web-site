@@ -4,26 +4,25 @@ bodyClass: "page-home"
 ---
 
 <div class="intro">
-  <div class="img">
-    <img src="/images/logo/logo.svg">
+  <div class="img logo">
+    <img src="/images/logo/logo_with_text.svg">
   </div>
 </div>
 
 <div class="strip">
   <div class="container pt-6 pb-2">
     <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 3 %}
-      {% for service in site.services limit: limit %}
+      {% for category in site.categories limit: 3 %}
       <div class="col-12 col-md-4 mb-1">
-        <div class="family">
-          <div class="family-plate">
-            <a href="{{ service.url | relative_url }}">
-              <div class="family-img">
-                <img src="{{ service.image }}">
+        <div class="category">
+          <div class="category-plate">
+            <a href="{{ category.url | relative_url }}">
+              <div class="category-img">
+                <img src="{{ category.image }}">
               </div>
-              <h2 class="family-title">{{ service.title }}</h2>
+              <h2 class="category-title">{{ category.title }}</h2>
             </a>
-            <p>{{ service.description | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ category.description | markdownify | strip_html | truncate: 100 }}</p>
           </div>
         </div>
       </div>

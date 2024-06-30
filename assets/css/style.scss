@@ -138,12 +138,12 @@ body {
   }
 }
 
-.family {
-  .family-plate {
+.category {
+  .category-plate {
     display: flex;
     flex-direction: column;
     text-align: center;
-    .family-img {
+    .category-img {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -180,4 +180,9 @@ body {
       }
     }
   }
+}
+
+.container iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }

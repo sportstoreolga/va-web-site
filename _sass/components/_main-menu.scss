@@ -14,12 +14,12 @@
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
+        text-transform: uppercase;
         color: $menu-color;
         transition: color .2s ease-in-out;
-        line-height: 2.75em;
+        line-height: 3em;
         padding: 0 1.25em;
         &:hover {
-          text-decoration: underline;
           color: $menu-hover-color;
           background-color: $menu-hover-bg-color;
         }
@@ -28,9 +28,10 @@
         > a {
           font-weight: bold;
           text-decoration: none;
+          transition: all 225ms ease-in 0s;
           &:hover {
             text-decoration: none;
-            transition: all 225ms ease-in 0s;
+
           }
         }
       }

@@ -12,6 +12,14 @@
     justify-content: center;
     img {
       height: 60%;
+      width: 80%;
+      margin: auto;
+    }
+    @include media-breakpoint-up(md) {
+      img {
+        height: 60%;
+        width: unset;
+      }
     }
   }
 
@@ -20,9 +28,7 @@
   align-items: center;
   padding-bottom: 60px;
   overflow: hidden;
-  @include media-breakpoint-up(md) {
 
-  }
   h1 {
     color: $black;
     font-size: 42px;

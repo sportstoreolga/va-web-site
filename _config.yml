@@ -14,7 +14,7 @@ home:
   limit_services: 6
 
 collections:
-  services:
+  categories:
     output: true
     sort_by: weight
   products:
@@ -40,6 +40,20 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+
+#gems:
+#  - jekyll-paginate-v2
+
+# Pagination Settings
+#pagination:
+#  enabled: true
+#  collection: 'data.news'
+#  per_page: 5
+#  permalink: '/news/:num/'
+#  title: ' - Новости :num'
+#  limit: 0
+#  sort_field: 'date'
+#  sort_reverse: true
 
 exclude:
   - Gemfile

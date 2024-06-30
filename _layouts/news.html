@@ -1,0 +1,49 @@
+---
+layout: default
+bodyClass: "page-basic"
+---
+
+<div class="container pt-6 mb-6">
+    <h1>{{ page.title }} </h1>
+    {% if site.data.news %}
+    {% for item in site.data.news limit: 5 %}
+    <div class="row justify-content-start mb-2">
+        <div class="col-12 col-md-7 mb-1">
+            {% assign url = item.url | remove: "https://www.youtube.com/watch?v=" %}
+            <div class="embed-container">
+                <iframe
+                        src="https://www.youtube.com/embed/{{ url }}"
+                        frameborder="0"
+                        allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 mb-1">
+            <div class="date mb-2" style="font-weight: bold; opacity: 0.75;">
+                {% assign m = item.upload_date | date: "%-m" %}
+                {{ item.upload_date | date: "%-d" }}
+                {% case m %}
+                {% when '1' %}Января
+                {% when '2' %}Февраля
+                {% when '3' %}Марта
+                {% when '4' %}Апреля
+                {% when '5' %}Мая
+                {% when '6' %}Июня
+                {% when '7' %}Июля
+                {% when '8' %}Августа
+                {% when '9' %}Сентября
+                {% when '10' %}Октября
+                {% when '11' %}Ноября
+                {% when '12' %}Декабря
+                {% endcase %}
+                {{ item.upload_date | date: "%Y" }}
+            </div>
+            <div><a href="{{ item.link }}" target="blank"><img src="{{ item.url | relative_url }}" title="{{ item.title }}" alt="{{ item.title }}" /></a></div>
+        </div>
+    </div>
+
+
+    {% endfor %}
+    {% endif %}
+</div>
+

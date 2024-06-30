@@ -3,7 +3,7 @@ main:
     url: "/"
     weight: 2
   - name: "Магазин"
-    url: "/team/"
+    url: "/categories/all/"
     weight: 3
   - name: "О нас"
     url: "/about/"
@@ -12,7 +12,7 @@ main:
     url: "/contact/"
     weight: 5
   - name: "Новости"
-    url: "/contact/"
+    url: "/news/"
     weight: 6
 
 footer:

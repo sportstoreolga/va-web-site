@@ -39,7 +39,7 @@ bodyClass: "page-home"
       {% for product in products limit: 2 %}
       <div class="col-12 col-md-6 mb-1">
         <div class="product">
-          <a href="{{ products.buy_url | relative_url }}">
+          <a href="{{ product.url | relative_url }}">
             <div class="product-plate">
               <div class="product-img">
                 <img src="{{ product.image }}">

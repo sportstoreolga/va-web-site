@@ -180,7 +180,22 @@ h2 {
       &:after {
         content: '\20BD';
         font-weight: bold;
+        margin-left: 0.5em;
       }
+    }
+  }
+  .product-img {
+    img {
+      width: 100%;
+    }
+  }
+  .product-price {
+    font-weight: bold;
+    font-size: 1.3em;
+    &:after {
+      content: '\20BD';
+      font-weight: bold;
+      margin-left: 0.5em;
     }
   }
 }

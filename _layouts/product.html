@@ -3,13 +3,21 @@ layout: default
 bodyClass: "page-service"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-        <h1 class="title">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
-      </div>
+<div class="container pt-6 mb-6 product">
+    <div class="row justify-content-start mb-2">
+        <div class="col-12 col-md-7 mb-1 product-img">
+            <img src="{{ page.image | relative_url }}">
+        </div>
+        <div class="col-12 col-md-5 mb-1">
+            <h1>{{ page.title }}</h1>
+            <p class="product-price">{{ page.price }}</p>
+            <p>{{ page.description }}</p>
+            <a href="{{ product.buy_url | relative_url }}">
+                <div class="button">Купить</div>
+            </a>
+        </div>
     </div>
-  </div>
+
+
 </div>
+

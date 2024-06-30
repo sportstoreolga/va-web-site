@@ -21,7 +21,7 @@ bodyClass: "page-basic"
             {% for product in products %}
             <div class="col-12 col-md-4 mb-1">
                 <div class="product">
-                    <a href="{{ products.buy_url | relative_url }}">
+                    <a href="{{ product.url | relative_url }}">
                         <div class="product-plate">
                             <div class="product-img">
                                 <img src="{{ product.image }}">

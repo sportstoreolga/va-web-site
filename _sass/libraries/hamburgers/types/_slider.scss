@@ -6,23 +6,23 @@
    */
   .hamburger--slider {
     .hamburger-inner {
-      top: $hamburger-layer-height * 0.5;
+      top: ($hamburger-layer-height + 1) * 0.5;
 
       &::before {
-        top: $hamburger-layer-height + $hamburger-layer-spacing;
+        top: $hamburger-layer-height + 1 + $hamburger-layer-spacing;
         transition-property: transform, opacity;
         transition-timing-function: ease;
         transition-duration: 0.15s;
       }
 
       &::after {
-        top: ($hamburger-layer-height * 2) + ($hamburger-layer-spacing * 2);
+        top: ($hamburger-layer-height + 1 + $hamburger-layer-spacing) * 2;
       }
     }
 
     &.is-active {
       .hamburger-inner {
-        $y-offset: $hamburger-layer-spacing + $hamburger-layer-height;
+        $y-offset: $hamburger-layer-spacing + 1 + $hamburger-layer-height;
 
         transform: translate3d(0, $y-offset, 0) rotate(45deg);
 

@@ -1,12 +1,13 @@
 ---
-title: "Mergers"
-date: 2019-02-28T15:15:34+10:00
-weight: 3
+title: "Кружки"
+description: Кружки из беби-альпаки переваренной первоклассным балтийским кашалотом. Любые размеры.
+image: /images/illustrations/mug.svg
+date: 2024-06-18T12:38:46+10:00
+weight: 2
+layout: mugs
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Кружки из беби-альпаки переваренной первоклассным балтийским кашалотом. Любые размеры.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 

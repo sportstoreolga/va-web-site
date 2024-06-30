@@ -1,6 +1,6 @@
 main:
   - name: "Главная"
-    url: "/services/"
+    url: "/"
     weight: 2
   - name: "Магазин"
     url: "/team/"

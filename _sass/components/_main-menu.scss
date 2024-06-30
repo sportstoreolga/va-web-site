@@ -14,14 +14,14 @@
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: color-mix(in srgb, $primary-dark 25%, $white);
+        color: $menu-color;
         transition: color .2s ease-in-out;
         line-height: 2.75em;
         padding: 0 1.25em;
         &:hover {
           text-decoration: underline;
-          color: $white;
-          background-color: $primary-hover;
+          color: $menu-hover-color;
+          background-color: $menu-hover-bg-color;
         }
       }
       &.active {

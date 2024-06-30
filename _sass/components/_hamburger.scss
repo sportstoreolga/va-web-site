@@ -12,11 +12,11 @@
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background: $primary;
+    background: $menu-color;
   }
   .hamburger-inner::after {
-    width: 18px;
-    right: 0;
+    width: 36px;
+    left: 0;
   }
   &.is-active {
     .hamburger-inner::after {

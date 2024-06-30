@@ -1,10 +1,15 @@
 ---
-title: "Accounting"
-date: 2018-11-18T12:33:46+10:00
-weight: 1
+title: "Хлопковая футболка (черная)"
+description: Черная хлопковая футболка. Любые размеры.
+image: /images/products/tshirt_black.jpg
+buy_url: /
+date: 2024-06-18T12:45:46+10:00
+type: t-shirt
+price: 800
+layout: product
 ---
 
-Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
+Все товары из беби-альпаки переваренной первоклассным балтийским кашалотом. Любые размеры.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 

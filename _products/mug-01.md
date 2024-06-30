@@ -1,13 +1,15 @@
 ---
-title: "Insurance"
-date: 2019-05-18T12:33:46+10:00
-weight: 7
+title: "Кружка"
+description: Кружка Аквамэн.
+image: /images/products/mug_test.jpg
+buy_url: /
+date: 2024-06-18T12:45:46+10:00
+type: mug
+price: 1000
+layout: product
 ---
 
-Lorem markdownum **Achaica revolutaque amore**, penitus puppes nec furit,
-clipeus fatetur, mira inter accedere. Dedit dum raptoresque Oete dolorem
-Cretaeas enim [ipse pectora excusat](#in-poscat) candentibus fertur? Furtiva
-Orontes Erysicthona dona, est per Achille viridi draconis cultis mota milia.
+Все товары из беби-альпаки переваренной первоклассным балтийским кашалотом. Любые размеры.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 

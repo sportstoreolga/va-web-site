@@ -1,8 +1,24 @@
 ---
 ---
 
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Regular.woff2") format("woff2"),
+  url("/assets/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Bold.woff2") format("woff2"),
+  url("/assets/fonts/Montserrat-Bold.woff") format("woff");
+}
+
 // Colors
-$primary: #e5261f;
+$primary: #30a8a4;
 $primary-dark: #004652;
 $primary-hover: #33a7a4;
 $secondary: #f88379;
@@ -11,6 +27,10 @@ $white: #ffffff;
 $white-offset: #fff6f8;
 $steel: #5c5a5a;
 
+$menu-color: color-mix(in srgb, $primary-dark 25%, $white);
+$menu-hover-color: $white;
+$menu-hover-bg-color: $primary-hover;
+
 // Links
 $link-color: $primary;
 $link-decoration: none;
@@ -18,8 +38,8 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: 'Montserrat', sans-serif, -apple-system;
+$font-family-heading: 'Montserrat', sans-serif, -apple-system;
 
 // Footer
 $footer-background-color: $primary-dark;
@@ -115,5 +135,49 @@ body {
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;
+  }
+}
+
+.family {
+  .family-plate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .family-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      img {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.product {
+  .product-plate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 100%;
+    .product-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 1em;
+      img {
+        width: 100%;
+      }
+    }
+    .product-title {
+      font-size: 1.2em;
+    }
+    .product-price {
+      font-weight: bold;
+      &:after {
+        content: '\20BD';
+        font-weight: bold;
+      }
+    }
   }
 }

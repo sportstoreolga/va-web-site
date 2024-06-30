@@ -1,5 +1,6 @@
 .intro {
   padding: 0;
+  margin-bottom: 2em;
   .img {
     background-image: url("/images/more_1920x510.jpg");
     background-size: cover;
@@ -26,7 +27,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 60px;
   overflow: hidden;
 
   h1 {

@@ -3,22 +3,35 @@ layout: default
 bodyClass: "page-basic"
 ---
 
+<div class="container pt-6 pt-md-6">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="service service-single">
+                <h1 class="title">{{page.title}}</h1>
+                <div class="content">{{content}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="strip">
-    <div class="container pt-6 pb-6 pb-md-10">
+    <div class="container pt-4 pb-6 pb-md-10">
         <div class="row justify-content-start">
             {% assign products = site.products | where:"type","mug" %}
-            {% for service in products %}
+            {% for product in products %}
             <div class="col-12 col-md-4 mb-1">
-                <div class="family">
-                    <div class="family-plate">
-                        <div class="family-img">
-                            <img src="{{ service.image }}">
+                <div class="product">
+                    <a href="{{ products.buy_url | relative_url }}">
+                        <div class="product-plate">
+                            <div class="product-img">
+                                <img src="{{ product.image }}">
+                            </div>
+                            <h2 class="product-title">
+                                {{ product.title }}
+                            </h2>
+                            <p class="product-price">{{ product.price }}</p>
                         </div>
-                        <h2 class="family-title">
-                            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-                        </h2>
-                        <p>{{ service.description | markdownify | strip_html | truncate: 100 }}</p>
-                    </div>
+                    </a>
                 </div>
             </div>
             {% endfor %}

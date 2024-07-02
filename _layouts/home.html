@@ -32,7 +32,7 @@ bodyClass: "page-home"
 </div>
 
 <div class="strip">
-  <div class="container mt-2 pb-6 pb-md-10">
+  <div class="container mt-2">
     <h2 class="text-center pb-2">Новые поступления</h2>
     <div class="row justify-content-start">
       {% assign products = site.products | order : "date" %}
@@ -54,6 +54,12 @@ bodyClass: "page-home"
       </div>
       {% endfor %}
     </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="container mt-2 pb-6 pb-md-10 text-center">
+    <a href="/categories/all/"><div class="button">Все товары</div></a>
   </div>
 </div>
 

@@ -23,6 +23,3 @@ bundle exec jekyll build
 
 Исходник темы: https://github.com/zerostaticthemes/jekyll-serif-theme?ref=jekyll-themes.com
 
-
-gfhgfhgfhgfhrey54654645
-

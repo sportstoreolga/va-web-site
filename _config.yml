@@ -40,6 +40,7 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-include-cache
 
 #gems:
 #  - jekyll-paginate-v2

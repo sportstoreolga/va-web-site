@@ -4,4 +4,4 @@ layout: contact
 description: Contact
 ---
 
-Наши котакты:
+Наши контакты:

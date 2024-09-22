@@ -3,7 +3,7 @@ title: "Другие товары"
 description: Картины пейзажей Балтийского моря. Частичка Балтики в шкатулке.
 image: /images/illustrations/box.svg
 date: 2024-06-18T12:45:46+10:00
-weight: 3
+weight: 4
 layout: other
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Картина"
+title: "Картина, гуашь"
 description: Картина с пейзажем Балтийского моря. Гуашь, формат А3
 image: /images/products/painting.jpg
 buy_url: /

@@ -3,7 +3,7 @@ title: "Все товары"
 description: Все товары.
 image: /images/illustrations/box.svg
 date: 2024-06-18T12:45:46+10:00
-weight: 5
+weight: 6
 layout: all
 ---
 
